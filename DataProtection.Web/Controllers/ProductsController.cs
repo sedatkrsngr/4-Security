@@ -38,7 +38,7 @@ namespace DataProtection.Web.Controllers
 
         }
 
-        public async Task<IActionResult> Details(string  id)//int ? id yerine artık string sifrelenmiş Id gelecek
+        public async Task<IActionResult> Details(string  id) //int ? id yerine artık string sifrelenmiş Id gelecek
         {
             var timeLimitProtector = _dataProtector.ToTimeLimitedDataProtector();
 

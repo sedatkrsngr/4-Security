@@ -8,7 +8,7 @@ namespace DataProtection.Web.Models
 {
     public partial class Product// Bu şekilde şifrelenmiş Id için ayrı bir class oluşturup veritabandan da aramasın diye notmapped eklediks
     {
-        [NotMapped]
+         [NotMapped]
         public string sifrelenmisId { get; set; }
     }
 }

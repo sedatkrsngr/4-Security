@@ -19,7 +19,7 @@ namespace DataProtection.Web.Models
 
         public virtual DbSet<Product> Products { get; set; }
 
-//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // burada kullanmıcaz
+//         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) // burada kullanmıcaz
 //        {
 //            if (!optionsBuilder.IsConfigured)
 //            {

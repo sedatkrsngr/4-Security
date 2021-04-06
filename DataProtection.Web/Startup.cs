@@ -24,12 +24,12 @@ namespace DataProtection.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<SwaggerDBContext>(opt=> {
+             services.AddDbContext<SwaggerDBContext>(opt=> {
                 opt.UseSqlServer("Initial Catalog=SwaggerDB;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False");
             
             });//sonradan eklendi.
 
-            services.AddDataProtection();//Sayfa Adresindeki þifreleme gerçekleþtirmek için kullanýlýr.
+             services.AddDataProtection();//Sayfa Adresindeki þifreleme gerçekleþtirmek için kullanýlýr.
 
             services.AddControllersWithViews();
         }
