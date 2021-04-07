@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProtection.Web", "DataProtection.Web\DataProtection.Web.csproj", "{49F60EEA-1E36-4E3B-870D-81397050ABFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteBlackList.Web", "WhiteBlackList.Web\WhiteBlackList.Web.csproj", "{4ECC5E94-12B1-41D7-83E5-5FF9C8145069}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteBlackList.Web", "WhiteBlackList.Web\WhiteBlackList.Web.csproj", "{4ECC5E94-12B1-41D7-83E5-5FF9C8145069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecretProtection.Web", "SecretProtection.Web\SecretProtection.Web.csproj", "{AB02FBDF-D37D-494E-A7A0-EDF783BDD146}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecretProtection.Web", "SecretProtection.Web\SecretProtection.Web.csproj", "{AB02FBDF-D37D-494E-A7A0-EDF783BDD146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossMyWeb.API", "CrossMyWeb.API\CrossMyWeb.API.csproj", "{FEA13156-DB48-440C-9778-30864A3D1CBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrossMyWeb.API", "CrossMyWeb.API\CrossMyWeb.API.csproj", "{FEA13156-DB48-440C-9778-30864A3D1CBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossMyWeb.Web", "CrossMyWeb.Web\CrossMyWeb.Web.csproj", "{98732517-3B1C-46D2-853E-7EB2C9DB547F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FEA13156-DB48-440C-9778-30864A3D1CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEA13156-DB48-440C-9778-30864A3D1CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEA13156-DB48-440C-9778-30864A3D1CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98732517-3B1C-46D2-853E-7EB2C9DB547F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98732517-3B1C-46D2-853E-7EB2C9DB547F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98732517-3B1C-46D2-853E-7EB2C9DB547F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98732517-3B1C-46D2-853E-7EB2C9DB547F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
