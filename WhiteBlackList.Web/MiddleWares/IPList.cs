@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WhiteBlackList.Web.MiddleWares
 {
-    public class IPList//json adı ile aynı olmalı
+    public class IPList// json adı ile aynı olmalı
     {
         public string[] WhiteList { get; set; }
     }

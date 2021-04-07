@@ -19,7 +19,7 @@ namespace WhiteBlackList.Web.Controllers
             _logger = logger;
         }
 
-        [ServiceFilter(typeof(CheckWhiteList))]//Kullanımı bu şekilde metot seviyesinde olur
+        [ServiceFilter(typeof(CheckWhiteList))]// Kullanımı bu şekilde metot seviyesinde olur
         public IActionResult Index()
         {
             return View();

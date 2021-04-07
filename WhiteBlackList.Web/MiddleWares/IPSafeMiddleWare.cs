@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WhiteBlackList.Web.MiddleWares
 {
-    public class IPSafeMiddleWare//Uygulama bazında Engelleme
+    public class IPSafeMiddleWare //Uygulama bazında Engelleme
     {
         public readonly RequestDelegate _next;//gelen isteğin bilgileri burada tutulur
         public readonly IPList _ipList;//WhiteList tutan sınıfımız

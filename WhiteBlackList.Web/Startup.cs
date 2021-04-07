@@ -25,9 +25,9 @@ namespace WhiteBlackList.Web
         
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<CheckWhiteList>();//controller metot seviyesinde filter verirken consructor Iplist istediðinden dolayý servis olarak çalýþtýrýrýz ve [CheckWhiteList(..)] yerine [ServiceFilter(typeof(CheckWhiteList))] kullanarak hangi metotta sorgulama yapsýn belirtebiliriz
+            services.AddScoped<CheckWhiteList>(); //controller metot seviyesinde filter verirken consructor Iplist istediðinden dolayý servis olarak çalýþtýrýrýz ve [CheckWhiteList(..)] yerine [ServiceFilter(typeof(CheckWhiteList))] kullanarak hangi metotta sorgulama yapsýn belirtebiliriz
 
-            services.Configure<IPList>(Configuration.GetSection("IPList"));//appsettings.json içersindeki deðerlerle ayný adý oluþturan classlara doldur dedik.
+            services.Configure<IPList>(Configuration.GetSection("IPList")); //appsettings.json içersindeki deðerlerle ayný adý oluþturan classlara doldur dedik.
 
             services.AddControllersWithViews();
         }
@@ -52,7 +52,7 @@ namespace WhiteBlackList.Web
 
             app.UseAuthorization();
 
-            app.UseMiddleware<IPSafeMiddleWare>();//Burada oluþturduðumuz middleware çalýþsýn dedik
+            app.UseMiddleware<IPSafeMiddleWare>(); //Burada oluþturduðumuz middleware çalýþsýn dedik
 
             app.UseEndpoints(endpoints =>
             {

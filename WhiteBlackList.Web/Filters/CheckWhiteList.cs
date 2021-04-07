@@ -12,7 +12,7 @@ namespace WhiteBlackList.Web.Filters
 {
     public class CheckWhiteList :ActionFilterAttribute//Controller ve Method seviyesine yakalamk için
     {
-        public readonly IPList _ipList;//WhiteList tutan sınıfımız
+        public readonly IPList _ipList;// WhiteList tutan sınıfımız
 
         public CheckWhiteList(IOptions<IPList> ipList)
         {
