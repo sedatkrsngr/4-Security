@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,13 +21,17 @@ namespace SecretProtection.Web
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string ConnectionStrings = Configuration["ConnectionString:SqlConstr"];//Örn Sql connection stringimiz içinde þifremiz saklý olsun istedik. O zaman onu connection appsettings.jsonda þifre de secret.json içerisinde tanýmlarýz ve aþaðýdaki gibi bir iþlemle Güvenli bir þekilde ilerleriz
+            var builder = new SqlConnectionStringBuilder(ConnectionStrings);
+
+            builder.Password = Configuration["Passwords:SqlPassword"];//þifreyi çekeriz
+            
+
             services.AddControllersWithViews();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -36,7 +41,6 @@ namespace SecretProtection.Web
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
