@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtection.Web", "DataProtection.Web\DataProtection.Web.csproj", "{49F60EEA-1E36-4E3B-870D-81397050ABFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProtection.Web", "DataProtection.Web\DataProtection.Web.csproj", "{49F60EEA-1E36-4E3B-870D-81397050ABFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteBlackList.Web", "WhiteBlackList.Web\WhiteBlackList.Web.csproj", "{4ECC5E94-12B1-41D7-83E5-5FF9C8145069}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{49F60EEA-1E36-4E3B-870D-81397050ABFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49F60EEA-1E36-4E3B-870D-81397050ABFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49F60EEA-1E36-4E3B-870D-81397050ABFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECC5E94-12B1-41D7-83E5-5FF9C8145069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECC5E94-12B1-41D7-83E5-5FF9C8145069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECC5E94-12B1-41D7-83E5-5FF9C8145069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECC5E94-12B1-41D7-83E5-5FF9C8145069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
