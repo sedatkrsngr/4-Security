@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteBlackList.Web", "White
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecretProtection.Web", "SecretProtection.Web\SecretProtection.Web.csproj", "{AB02FBDF-D37D-494E-A7A0-EDF783BDD146}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossMyWeb.API", "CrossMyWeb.API\CrossMyWeb.API.csproj", "{FEA13156-DB48-440C-9778-30864A3D1CBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AB02FBDF-D37D-494E-A7A0-EDF783BDD146}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB02FBDF-D37D-494E-A7A0-EDF783BDD146}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB02FBDF-D37D-494E-A7A0-EDF783BDD146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA13156-DB48-440C-9778-30864A3D1CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA13156-DB48-440C-9778-30864A3D1CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA13156-DB48-440C-9778-30864A3D1CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA13156-DB48-440C-9778-30864A3D1CBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
