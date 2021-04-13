@@ -17,7 +17,29 @@ namespace OpenRedirectAttacks.Web.Controllers
         {
             _logger = logger;
         }
+        public IActionResult Login(string returnUrl="/")//default olarak anasayfaya gitmesi için koyduk
+        {
+            TempData["returnUrl"] = returnUrl;//Post işlemi olduğunda aynı metodun post işlemi veriyi yakalayabiliyor
+            return View();
+        }
+       
+        [HttpPost]
+        public IActionResult Login(string email,string password)
+        {
+            string returnUrl = TempData["returnUrl"].ToString();
 
+            //email ve password kontrolleri falan sağlandıktan sonra
+
+            if (Url.IsLocalUrl(returnUrl))//Yönlendirilecek sayfanın local sayfama ait olup olmadığına göre kontrol yaparak yönlendirme dolandırıcılığını engelleriz
+            {
+                return Redirect(returnUrl);
+            }
+            else
+            {
+                return Redirect("/");//sayfama ait değilse anasayfaya dön
+            }
+            
+        }
         public IActionResult Index()
         {
             return View();
