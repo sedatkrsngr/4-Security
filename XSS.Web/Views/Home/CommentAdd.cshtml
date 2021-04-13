@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CommentAdd</title>
+</head>
+<body>
+
+    <form action="/" method="post">
+
+
+        <input type="text" name="name" value="" />
+        <br />
+        <textarea name="comment"></textarea>
+        <br />
+        <input type="submit" name="name" value="yorum gönder" />
+    </form>
+
+    <h1>Yorumlar</h1>
+    <!--<strong>@ViewBag.Name</strong>-->    <!--@@ razor komutları içerisine html kodu atsakta decode encode işlemi yaptığı için siteyi etkilemez-->
+    <!--<hr />
+    <span>@Html.Raw(ViewBag.Comment)</span>-->
+    <!--Html.Raw kullanılınca html javacript kodları sitede çalışabilir hale geliyor. Bu yüzden mutlaka comment değerini alırken zararlı kodları temizlemek gerekiyor.-->
+
+
+    @if (ViewBag.Comments != null)//veritabanından okuduğumuz değer her seferinde buradan gelecek
+    {
+        foreach (var item in ViewBag.Comments as string[])
+        {
+            <span> @Html.Raw(item)</span>//bu server tarafında önlem alınmazsa sorun
+            <hr />
+        }
+    }
+</body>
+</html>
