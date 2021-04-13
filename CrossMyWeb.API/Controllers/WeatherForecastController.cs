@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -22,6 +23,8 @@ namespace CrossMyWeb.API.Controllers
         {
             _logger = logger;
         }
+
+        [EnableCors("AllowSite4")]//startupta kullanacağımız Controller en tepesinde de kullanılabilir eğer öyle kullanırsak ve bazı methodlarda kısıt olmasın istersek [DisableCors] başına koyarız
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()

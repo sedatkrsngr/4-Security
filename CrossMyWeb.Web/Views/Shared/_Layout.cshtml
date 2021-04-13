@@ -6,6 +6,13 @@
     <title>@ViewData["Title"] - CrossMyWeb.Web</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script type="text/javascript">  //Sanki bu siteden apiye aynı projede bulunan CrossMyWeb.API ye istek yapıyoruz ve yazıyoruz. İkisini çalıştırınca localhost adresleri farklı olduğu için cross hatası verir
+
+        fetch("https://localhost:44322/WeatherForecast").then(data => {
+            console.log(data);
+        });
+    </script>
+    
 </head>
 <body>
     <header>
